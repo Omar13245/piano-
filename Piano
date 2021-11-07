@@ -1,0 +1,210 @@
+const int buttonPin = 3;
+
+const int buttonPin2 = 4;
+
+const int buttonPin3 = 5;
+
+const int buttonPin4 = 6;
+
+const int buttonPin5 = 7;
+
+const int buttonPin6 = 8;
+
+const int buttonPin7 = 9;
+
+const int buttonPin8 = 10;
+
+const int ledPin = A7;
+
+const int spekarpin = A5;
+
+int buttonState = 0;
+
+int buttonState2 = 0;
+
+int buttonState3 = 0;
+
+int buttonState4 = 0;
+
+int buttonState5 = 0;
+
+int buttonState6 = 0;
+
+int buttonState7 = 0;
+
+int buttonState8 = 0;
+
+void setup() {
+
+pinMode(ledPin, OUTPUT);
+
+pinMode(buttonPin, INPUT);
+
+pinMode(buttonPin2, INPUT);
+
+pinMode(buttonPin3, INPUT);
+
+pinMode(buttonPin4, INPUT);
+
+pinMode(buttonPin5, INPUT);
+
+pinMode(buttonPin6, INPUT);
+
+pinMode(buttonPin7, INPUT);
+
+pinMode(buttonPin8, INPUT);
+
+pinMode(spekarpin,OUTPUT);
+
+ 
+
+}
+
+void loop() {
+
+buttonState = digitalRead(buttonPin);
+
+buttonState2 = digitalRead(buttonPin2);
+
+buttonState3 = digitalRead(buttonPin3);
+
+buttonState4 = digitalRead(buttonPin4);
+
+buttonState5 = digitalRead(buttonPin5);
+
+buttonState6 = digitalRead(buttonPin6);
+
+buttonState7 = digitalRead(buttonPin7);
+
+buttonState8 = digitalRead(buttonPin8);
+
+if (buttonState == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,262);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button2() {
+
+if (buttonState2 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,294);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button3() {
+
+if (buttonState3 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,330);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button4() {
+
+if (buttonState4 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,349);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button5() {
+
+if (buttonState5 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,392);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button6() {
+
+if (buttonState6 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,440);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button7() {
+
+if (buttonState7 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,494);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+void button8() {
+
+if (buttonState7 == HIGH) {
+
+digitalWrite(ledPin, HIGH);
+
+tone(spekarpin,523);
+
+} else {
+
+digitalWrite(ledPin, LOW);
+
+tone(spekarpin,LOW);
+
+}}
+
+
+
+
+
